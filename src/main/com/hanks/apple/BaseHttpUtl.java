@@ -1,8 +1,9 @@
 package com.hanks.apple;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.github.kevinsawicki.http.HttpRequest;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import com.hanks.apple.utils.Ugson;
 
 import java.net.URL;
@@ -16,7 +17,7 @@ public class BaseHttpUtl {
         System.out.println(strResponseJson);
     }
 
-    public static String getHttpRequest(String url, HashMap<String, Object> map) {
+    public static String httpPost(String url, HashMap<String, Object> map) {
         String JsonStr = Ugson.toJson(map);
         show("请求url:\n" + url);
         show("请求参数:\n" + getJsonFormat(JsonStr));
@@ -26,11 +27,11 @@ public class BaseHttpUtl {
         HttpRequest h = request.send(JsonStr);
         String strResponse = h.body();
         String s = getJsonFormat(strResponse);
-        show("请求结果:\n" +s);
+        show("请求结果:\n" + s);
         return s;
     }
 
-    public static String getHttpRequest(String url, String JsonStr) {
+    public static String httpGet(String url, String JsonStr) {
         show("请求url:\n" + url);
         show("请求参数:\n" + getJsonFormat(JsonStr));
         // 发起post请求 resp1接收返回的数据
@@ -39,15 +40,16 @@ public class BaseHttpUtl {
         HttpRequest h = request.send(JsonStr);
         String strResponse = h.body();
         String s = getJsonFormat(strResponse);
-        show("请求结果:\n" +s);
+        show("请求结果:\n" + s);
         return s;
     }
 
-    private static String getJsonFormat(String strResponse) {
-        return new GsonBuilder()
-                .setPrettyPrinting()
-                .create()
-                .toJson(new JsonParser().parse(strResponse));
+    private static String getJsonFormat(String json) {
+        JSONObject object = JSONObject.parseObject(json);
+        String pretty = JSON.toJSONString(object, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
+                SerializerFeature.WriteDateUseDateFormat);
+
+        return pretty;
     }
 
     public static HttpRequest get(final URL url) throws HttpRequest.HttpRequestException {

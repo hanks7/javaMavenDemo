@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "bannerDetailsUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/%E7%8E%A9%E8%B5%9A%E7%9F%A5%E4%B9%A6%E7%AD%94%E7%A4%BC.png",
+      "bannerId": 1,
+      "bannerName": "首页轮播图",
+      "bannerState": 1,
+      "bannerUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/1.png",
+      "createTime": 1663565900000,
+      "operator": ""
+    },
+    {
+      "bannerDetailsUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/%E7%8E%A9%E8%B5%9A%E7%9F%A5%E4%B9%A6%E7%AD%94%E7%A4%BC.png",
+      "bannerId": 2,
+      "bannerName": "首页轮播图",
+      "bannerState": 1,
+      "bannerUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/2.png",
+      "createTime": 1665306814000
+    },
+    {
+      "bannerDetailsUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/%E7%8E%A9%E8%B5%9A%E7%9F%A5%E4%B9%A6%E7%AD%94%E7%A4%BC.png",
+      "bannerId": 3,
+      "bannerName": "首页轮播图",
+      "bannerState": 1,
+      "bannerUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/3.png",
+      "createTime": 1665306832000
+    }
+  ],
+  "msg": "",
+  "status": 200
+}
