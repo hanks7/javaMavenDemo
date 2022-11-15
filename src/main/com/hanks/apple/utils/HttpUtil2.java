@@ -1,8 +1,5 @@
-package com.hanks.apple;
+package com.hanks.apple.utils;
 
-import com.hanks.apple.utils.Ugson;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -11,51 +8,103 @@ public class HttpUtil2 extends BaseHttpUtl {
 
     public static void main(String[] args) {
 
-//        extracted3();//商店道具
-//        getInfo();
-//        roomList();
-//        selectShopGiftList();
-//        selectMyCentreWorksList();//获取文章列表
-//        selectLatelyExamChapterList();//查询文章
-//        selectMyOrderList();
-//        selectShopGiftList();
-//        selectByPayOrderInfo();
-//        selectLatelyExamChapterList();
-//        selectMyCentreWorksList();
-//        selectLatelyExamChapterList();
-//        selectMyOrderList();
-//        selectMyFansList();
-//        roomList();//近期考场
-//        getInfo();//
-//        selectMyFollowList();//我的关注
-//        queryFollowState();
-//        selectMyBadgeInfo();//个人勋章
-//        selectMyPropList();//背包道具
-//        selectShopGiftList();
+//        selectLatelyBookList();
+//        selectChapterDetail();
+//        selectMyBadgeInfo();
 
-//        belongToUser();//查看直推
-//        forbidMonthBonus();//取消/恢复月度分红
-//        setUserAutoPolling();//取消/恢复月度分红
-        myInvitedList();
+        selectLatelyExamChapterList();
+    }
+
+    /**
+     * 尊享身份
+     */
+    private static void selectMyBadgeInfo() {
+        String url = "http://testzsdl.zijiapuzi.com/account/userinfo/selectMyBadgeInfo";
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("userId", 634810);
+        httpPost(url, "{\"userId\":\"634810\"}");
+    }
+
+    private static void creatOrder() {
+        String url = "http://testzsdl.zijiapuzi.com/shop/order/creatOrder";
+        httpPost(url,
+                "{\"id\":\"980981345147776\"" +
+                        ",\"payPassword\":\"123456\"" +
+                        ",\"payType\":1" +
+                        ",\"productId\":\"46\"" +
+                        ",\"productNumbers\":1" +
+                        ",\"productSkuId\":\"null\"" +
+                        ",\"terminalType\":3" +
+                        ",\"userId\":\"634810\"}");
+    }
+
+    /**
+     * 查询章节详情 userId
+     * string
+     * 用户获取用户之间的关注状态
+     * chapterId
+     * string
+     * roomId
+     * string
+     * 查询近期必考时必传
+     */
+    private static void selectChapterDetail() {
+        String url = "http://testzsdl.zijiapuzi.com/social/chapter/selectChapterDetail";
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("userId", 631613);
+        map.put("chapterId", 970910527559681l);
+        httpPost(url, map);
     }
 
 
+    private static void selectUserAddressList() {
+        String url = "http://testzsdl.zijiapuzi.com/base/address/selectUserAddressList";
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("userId", 631613);
+        httpPost(url, map);
+    }
+
+
+    private static void selectShopGiftInfo() {
+        String url = "http://testzsdl.zijiapuzi.com/shop/shop/selectShopGiftInfo";
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("productId", 71);
+        httpPost(url, map);
+    }
+
+    /**
+     * 首页房间 最近访问考场
+     */
+    private static void lastRoom() {
+        String url = "http://testzsdl.zijiapuzi.com/event/examRoom/lastRoom";
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("userId", 107);
+        httpPost(url, map);
+    }
+
+    private static void myPocket() {
+        String url = "http://testzsdl.zijiapuzi.com/account/account/myPocket";
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("userId", 924394411035909L);
+        httpPost(url, map);
+    }
 
     private static void myInvitedList() {
         String url = "http://testzsdl.zijiapuzi.com/account/user/myInvitedList";
         HashMap<String, Object> map = new HashMap<>();
         map.put("page", 1);
         map.put("rows", 10);
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
+
     /**
      * 取消/恢复轮询
      */
     private static void setUserAutoPolling() {
         String url = "http://testzsdl.zijiapuzi.com/account/user/setUserAutoPolling";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         map.put("fromUserId", 107);
         map.put("forbidValue", 0);//  1.恢复 2.关闭
         httpPost(url, map);
@@ -67,18 +116,19 @@ public class HttpUtil2 extends BaseHttpUtl {
     private static void forbidMonthBonus() {
         String url = "http://testzsdl.zijiapuzi.com/account/account/forbidMonthBonus";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         map.put("fromUserId", 107);
         map.put("forbidValue", 0);//0.恢复 1.禁止
         httpPost(url, map);
     }
+
     /**
      * 查看推荐人
      */
     private static void belongToUser() {
         String url = "http://testzsdl.zijiapuzi.com/account/user/belongToUser";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 
@@ -89,12 +139,6 @@ public class HttpUtil2 extends BaseHttpUtl {
         httpPost(url, map);
     }
 
-    private static void selectMyBadgeInfo() {
-        String url = "http://testzsdl.zijiapuzi.com/account/userinfo/selectMyBadgeInfo";
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
-        httpPost(url, map);
-    }
 
     /**
      * 查询关注状态
@@ -102,7 +146,7 @@ public class HttpUtil2 extends BaseHttpUtl {
     private static void queryFollowState() {
         String url = "http://testzsdl.zijiapuzi.com/social/follow/queryFollowState";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         map.put("beUserId", 107);
         httpPost(url, map);
     }
@@ -116,7 +160,7 @@ public class HttpUtil2 extends BaseHttpUtl {
         HashMap<String, Object> map = new HashMap<>();
         map.put("page", 1);
         map.put("rows", 10);
-        map.put("userId", 634810);
+        map.put("userId", 1094540);
         httpPost(url, map);
     }
 
@@ -125,7 +169,7 @@ public class HttpUtil2 extends BaseHttpUtl {
         HashMap<String, Object> map = new HashMap<>();
         map.put("page", 1);
         map.put("rows", 10);
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 
@@ -149,13 +193,13 @@ public class HttpUtil2 extends BaseHttpUtl {
      */
     private static void selectLatelyExamChapterList() {
         String url = "http://testzsdl.zijiapuzi.com/social/exam/selectLatelyExamChapterList";
-        ExamListParam param = new ExamListParam();
-        ArrayList<Long> list = new ArrayList<>();
-        list.add(965716242728065L);
-        param.setBookChapter(list);
-        param.setBookId("965716242728064");
-        String json = Ugson.toJson(param);
-        httpGet(url, json);
+//        ExamListParam param = new ExamListParam();
+//        ArrayList<Long> list = new ArrayList<>();
+//        list.add(965716242728065L);
+//        param.setBookChapter(list);
+//        param.setBookId("965716242728064");
+//        String json = Ugson.toJson(param);
+        httpPost(url, "{ \"bookId\":\"985314656812561\"}");
     }
 
 
@@ -186,26 +230,26 @@ public class HttpUtil2 extends BaseHttpUtl {
         map.put("page", 1);
         map.put("rows", 10);
         map.put("wlSendState", 3);//物流发货状态1.待发货 2.待收货 3.已签收
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 
     /**
-     * 商店道具
+     *
      */
     private static void selectLatelyExamList() {
         String url = "http://testzsdl.zijiapuzi.com/social/exam/selectLatelyExamList";
         HashMap<String, Object> map = new HashMap<>();
         map.put("page", 1);
         map.put("rows", 10);
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 
     private static void getInfo() {
         String url = "http://testzsdl.zijiapuzi.com/account/user/getInfo";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 107);
         httpPost(url, map);
     }
 
@@ -215,14 +259,14 @@ public class HttpUtil2 extends BaseHttpUtl {
     private static void seleteMyJoinClassList() {
         String url = "http://testzsdl.zijiapuzi.com/social/classinfo/seleteMyJoinClassList";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 
     private static void seleteHotClassList() {
         String url = "http://testzsdl.zijiapuzi.com/social/classinfo/seleteHotClassList";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 
@@ -231,14 +275,14 @@ public class HttpUtil2 extends BaseHttpUtl {
         HashMap<String, Object> map = new HashMap<>();
         map.put("page", 1);
         map.put("rows", 10);
-        map.put("userId", 634810);
-        httpPost(url, map);
+        map.put("userId", 631613);
+        httpPost(url, "{\"page\":1,\"rows\":10,\"userId\":1094540}");
     }
 
     private static void selectShopPropList() {
         String url = "http://testzsdl.zijiapuzi.com/shop/shop/selectShopPropList";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         map.put("page", 1);
         map.put("rows", 10);
         map.put("shelvesState", 1);//上下架状态 1.上架 2.下架
@@ -252,7 +296,7 @@ public class HttpUtil2 extends BaseHttpUtl {
     private static void selectShopGiftList() {
         String url = "http://testzsdl.zijiapuzi.com/shop/shop/selectShopGiftList";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         map.put("page", 1);
         map.put("rows", 10);
         map.put("shelvesState", 1);//上下架状态 1.上架 2.下架
@@ -270,13 +314,13 @@ public class HttpUtil2 extends BaseHttpUtl {
         map.put("rows", 10);
         map.put("userId", 107);
         map.put("searchType", 1);
-        httpPost(url, map);
+        httpPost(url, "{\"searchType\":4,\"page\":1,\"rows\":10,\"userId\":107}");
     }
 
     private static void selectMyPropList() {
         String url = "http://testzsdl.zijiapuzi.com/shop/prop/selectMyPropList";
         HashMap<String, Object> map = new HashMap<>();
-        map.put("userId", 634810);
+        map.put("userId", 631613);
         httpPost(url, map);
     }
 

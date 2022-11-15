@@ -1,10 +1,9 @@
-package com.hanks.apple;
+package com.hanks.apple.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.github.kevinsawicki.http.HttpRequest;
-import com.hanks.apple.utils.Ugson;
 
 import java.net.URL;
 import java.util.HashMap;
@@ -31,7 +30,7 @@ public class BaseHttpUtl {
         return s;
     }
 
-    public static String httpGet(String url, String JsonStr) {
+    public static String httpPost(String url, String JsonStr) {
         show("请求url:\n" + url);
         show("请求参数:\n" + getJsonFormat(JsonStr));
         // 发起post请求 resp1接收返回的数据
@@ -45,11 +44,15 @@ public class BaseHttpUtl {
     }
 
     private static String getJsonFormat(String json) {
-        JSONObject object = JSONObject.parseObject(json);
+        JSONObject object = JSONObject.parseObject(json+"");
         String pretty = JSON.toJSONString(object, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
                 SerializerFeature.WriteDateUseDateFormat);
-
         return pretty;
+
+//        return new GsonBuilder()
+//                .setPrettyPrinting()
+//                .create()
+//                .toJson(new JsonParser().parse(json));
     }
 
     public static HttpRequest get(final URL url) throws HttpRequest.HttpRequestException {
