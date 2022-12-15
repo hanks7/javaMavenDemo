@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class TestMain {
     public static void main(String[] args) {
-        System.out.println(replaceNameX("发斯", 1));
+        System.out.println(replaceNameX("341102199008010616", 4));
     }
 
 
