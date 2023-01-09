@@ -1,4 +1,4 @@
-package com.hanks.apple;
+package com.hanks.apple.test;
 
 public class AuthInfoBean {
 

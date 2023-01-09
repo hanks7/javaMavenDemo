@@ -1,592 +1,75 @@
 {
   "msg": "",
   "data": {
-    "testCount": 14,
-    "registerDays": 920,
-    "creditScoreLeveLList": [
-      {
-        "high": 0,
-        "low": 0,
-        "level": 1,
-        "logoImgName": "Property1=白丁1.png",
-        "levelName": "白丁",
-        "id": 1,
-        "stockright": 0,
-        "props": ""
-      },
-      {
-        "high": 30,
-        "low": 0,
-        "level": 5,
-        "logoImgName": "Property1=童生5.png",
-        "levelName": "童生",
-        "id": 2,
-        "stockright": 50,
-        "props": "0011"
-      },
-      {
-        "high": 30,
-        "low": 10,
-        "level": 4,
-        "logoImgName": "Property1=童生4.png",
-        "levelName": "童生",
-        "id": 3,
-        "stockright": 80,
-        "props": "0012"
-      },
-      {
-        "high": 60,
-        "low": 30,
-        "level": 3,
-        "logoImgName": "Property1=童生3.png",
-        "levelName": "童生",
-        "id": 4,
-        "stockright": 100,
-        "props": "0110"
-      },
-      {
-        "high": 100,
-        "low": 60,
-        "level": 2,
-        "logoImgName": "Property1=童生2.png",
-        "levelName": "童生",
-        "id": 5,
-        "stockright": 120,
-        "props": "1010"
-      },
-      {
-        "high": 150,
-        "low": 100,
-        "level": 1,
-        "logoImgName": "Property1=童生1.png",
-        "levelName": "童生",
-        "id": 6,
-        "stockright": 150,
-        "props": "2200"
-      },
-      {
-        "high": 200,
-        "low": 150,
-        "level": 5,
-        "logoImgName": "Property1=秀才5.png",
-        "levelName": "秀才",
-        "id": 7,
-        "stockright": 200,
-        "props": "0023"
-      },
-      {
-        "high": 300,
-        "low": 200,
-        "level": 4,
-        "logoImgName": "Property1=秀才4.png",
-        "levelName": "秀才",
-        "id": 8,
-        "stockright": 230,
-        "props": "0024"
-      },
-      {
-        "high": 500,
-        "low": 300,
-        "level": 3,
-        "logoImgName": "Property1=秀才3.png",
-        "levelName": "秀才",
-        "id": 9,
-        "stockright": 270,
-        "props": "0220"
-      },
-      {
-        "high": 800,
-        "low": 500,
-        "level": 2,
-        "logoImgName": "Property1=秀才2.png",
-        "levelName": "秀才",
-        "id": 10,
-        "stockright": 300,
-        "props": "2030"
-      },
-      {
-        "high": 1200,
-        "low": 800,
-        "level": 1,
-        "logoImgName": "Property1=秀才1.png",
-        "levelName": "秀才",
-        "id": 11,
-        "stockright": 350,
-        "props": "3300"
-      },
-      {
-        "high": 1600,
-        "low": 1200,
-        "level": 5,
-        "logoImgName": "Property1=举人5.png",
-        "levelName": "举人",
-        "id": 12,
-        "stockright": 400,
-        "props": "0032"
-      },
-      {
-        "high": 2000,
-        "low": 1600,
-        "level": 4,
-        "logoImgName": "Property1=举人4.png",
-        "levelName": "举人",
-        "id": 13,
-        "stockright": 450,
-        "props": "0043"
-      },
-      {
-        "high": 2500,
-        "low": 2000,
-        "level": 3,
-        "logoImgName": "Property1=举人3.png",
-        "levelName": "举人",
-        "id": 14,
-        "stockright": 470,
-        "props": "0330"
-      },
-      {
-        "high": 3000,
-        "low": 2500,
-        "level": 2,
-        "logoImgName": "Property1=举人2.png",
-        "levelName": "举人",
-        "id": 15,
-        "stockright": 500,
-        "props": "3020"
-      },
-      {
-        "high": 3500,
-        "low": 3000,
-        "level": 1,
-        "logoImgName": "Property1=举人1.png",
-        "levelName": "举人",
-        "id": 16,
-        "stockright": 550,
-        "props": "4400"
-      },
-      {
-        "high": 4200,
-        "low": 3500,
-        "level": 5,
-        "logoImgName": "Property1=贡士5.png",
-        "levelName": "贡士",
-        "id": 17,
-        "stockright": 600,
-        "props": "0024"
-      },
-      {
-        "high": 4600,
-        "low": 4200,
-        "level": 4,
-        "logoImgName": "Property1=贡士4.png",
-        "levelName": "贡士",
-        "id": 18,
-        "stockright": 630,
-        "props": "0034"
-      },
-      {
-        "high": 5000,
-        "low": 4600,
-        "level": 3,
-        "logoImgName": "Property1=贡士3.png",
-        "levelName": "贡士",
-        "id": 19,
-        "stockright": 670,
-        "props": "0440"
-      },
-      {
-        "high": 5500,
-        "low": 5000,
-        "level": 2,
-        "logoImgName": "Property1=贡士2.png",
-        "levelName": "贡士",
-        "id": 20,
-        "stockright": 700,
-        "props": "4020"
-      },
-      {
-        "high": 6000,
-        "low": 5500,
-        "level": 1,
-        "logoImgName": "Property1=贡士1.png",
-        "levelName": "贡士",
-        "id": 21,
-        "stockright": 750,
-        "props": "5500"
-      },
-      {
-        "high": 7000,
-        "low": 6000,
-        "level": 5,
-        "logoImgName": "Property1=进士5.png",
-        "levelName": "进士",
-        "id": 22,
-        "stockright": 800,
-        "props": "0045"
-      },
-      {
-        "high": 7500,
-        "low": 7000,
-        "level": 4,
-        "logoImgName": "Property1=进士4.png",
-        "levelName": "进士",
-        "id": 23,
-        "stockright": 830,
-        "props": "0036"
-      },
-      {
-        "high": 8000,
-        "low": 7500,
-        "level": 3,
-        "logoImgName": "Property1=进士3.png",
-        "levelName": "进士",
-        "id": 24,
-        "stockright": 870,
-        "props": "0540"
-      },
-      {
-        "high": 9000,
-        "low": 8000,
-        "level": 2,
-        "logoImgName": "Property1=进士2.png",
-        "levelName": "进士",
-        "id": 25,
-        "stockright": 900,
-        "props": "5030"
-      },
-      {
-        "high": 10000,
-        "low": 9000,
-        "level": 1,
-        "logoImgName": "Property1=进士1.png",
-        "levelName": "进士",
-        "id": 26,
-        "stockright": 950,
-        "props": "6600"
-      },
-      {
-        "high": 20000,
-        "low": 10000,
-        "level": 3,
-        "logoImgName": "Property1=探花3.png",
-        "levelName": "探花",
-        "id": 27,
-        "stockright": 1000,
-        "props": "0056"
-      },
-      {
-        "high": 30000,
-        "low": 20000,
-        "level": 2,
-        "logoImgName": "Property1=探花2.png",
-        "levelName": "探花",
-        "id": 28,
-        "stockright": 2000,
-        "props": "0660"
-      },
-      {
-        "high": 40000,
-        "low": 30000,
-        "level": 1,
-        "logoImgName": "Property1=探花1.png",
-        "levelName": "探花",
-        "id": 29,
-        "stockright": 3000,
-        "props": "10100000"
-      },
-      {
-        "high": 50000,
-        "low": 40000,
-        "level": 2,
-        "logoImgName": "Property1=榜眼2.png",
-        "levelName": "榜眼",
-        "id": 30,
-        "stockright": 4000,
-        "props": "00150900"
-      },
-      {
-        "high": 70000,
-        "low": 50000,
-        "level": 1,
-        "logoImgName": "Property1=榜眼1.png",
-        "levelName": "榜眼",
-        "id": 31,
-        "stockright": 5000,
-        "props": "20200000"
-      },
-      {
-        "high": 10000,
-        "low": 70000,
-        "level": 1,
-        "logoImgName": "Property1=状元1.png",
-        "levelName": "状元",
-        "id": 32,
-        "stockright": 20000,
-        "props": "50500000"
-      }
-    ],
-    "creditSum": 0,
-    "creditTaskDayList": [
-      {
-        "limit": 200,
-        "taskName": "exam",
-        "taskId": 1,
-        "isComplete": 0
-      },
-      {
-        "limit": 400,
-        "taskName": "electric",
-        "taskId": 2,
-        "isComplete": 0
-      },
-      {
-        "limit": 40,
-        "taskName": "class",
-        "taskId": 3,
-        "isComplete": 0
-      },
-      {
-        "limit": 60,
-        "taskName": "newUser",
-        "taskId": 4,
-        "isComplete": 0
-      }
-    ],
-    "creditScoreLeveL": {
-      "score": 0,
-      "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=白丁1.png",
-      "level": 1,
-      "levelName": "白丁",
-      "id": 1
+    "birthday": 459792000000,
+    "studentNumber": "8100551",
+    "userAuth": 2,
+    "cityCode": "210200",
+    "bgImgUrl": "http://file.zijiapuzi.com/zsdl/image/20230102/1672647317196.jpg",
+    "jobAuth": 0,
+    "authTime": 1672399363000,
+    "userHeadUrl": "http://file.zijiapuzi.com/zsdl/image/20230103/1672675964476.jpg",
+    "accountStatus": 1,
+    "cityName": "大连",
+    "belongToCenter": 645531,
+    "identity": {
+      "isCenter": 1,
+      "instructorEndTime": 1673191800000,
+      "creatorType": 1,
+      "vvipNumber": 50,
+      "updateTime": 1672423131000,
+      "userId": 645531,
+      "isClassAdmin": 0,
+      "isPartner": 0,
+      "isInstructor": 1,
+      "createTime": 1672327671000,
+      "isMaster": 1,
+      "userAutoPolling": 2,
+      "isSpecAccount": 0,
+      "userType": 2,
+      "isVvip": 1,
+      "isAutoIdentity": 0
     },
-    "creditScoreList": [
-      {
-        "score": 0,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=白丁1.png",
-        "level": 1,
-        "levelName": "白丁",
-        "id": 1
-      },
-      {
-        "score": 30,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=童生5.png",
-        "level": 5,
-        "levelName": "童生",
-        "id": 2
-      },
-      {
-        "score": 30,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=童生4.png",
-        "level": 4,
-        "levelName": "童生",
-        "id": 3
-      },
-      {
-        "score": 60,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=童生3.png",
-        "level": 3,
-        "levelName": "童生",
-        "id": 4
-      },
-      {
-        "score": 100,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=童生2.png",
-        "level": 2,
-        "levelName": "童生",
-        "id": 5
-      },
-      {
-        "score": 150,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=童生1.png",
-        "level": 1,
-        "levelName": "童生",
-        "id": 6
-      },
-      {
-        "score": 200,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=秀才5.png",
-        "level": 5,
-        "levelName": "秀才",
-        "id": 7
-      },
-      {
-        "score": 300,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=秀才4.png",
-        "level": 4,
-        "levelName": "秀才",
-        "id": 8
-      },
-      {
-        "score": 500,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=秀才3.png",
-        "level": 3,
-        "levelName": "秀才",
-        "id": 9
-      },
-      {
-        "score": 800,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=秀才2.png",
-        "level": 2,
-        "levelName": "秀才",
-        "id": 10
-      },
-      {
-        "score": 1200,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=秀才1.png",
-        "level": 1,
-        "levelName": "秀才",
-        "id": 11
-      },
-      {
-        "score": 1600,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=举人5.png",
-        "level": 5,
-        "levelName": "举人",
-        "id": 12
-      },
-      {
-        "score": 2000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=举人4.png",
-        "level": 4,
-        "levelName": "举人",
-        "id": 13
-      },
-      {
-        "score": 2500,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=举人3.png",
-        "level": 3,
-        "levelName": "举人",
-        "id": 14
-      },
-      {
-        "score": 3000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=举人2.png",
-        "level": 2,
-        "levelName": "举人",
-        "id": 15
-      },
-      {
-        "score": 3500,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=举人1.png",
-        "level": 1,
-        "levelName": "举人",
-        "id": 16
-      },
-      {
-        "score": 4200,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=贡士5.png",
-        "level": 5,
-        "levelName": "贡士",
-        "id": 17
-      },
-      {
-        "score": 4600,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=贡士4.png",
-        "level": 4,
-        "levelName": "贡士",
-        "id": 18
-      },
-      {
-        "score": 5000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=贡士3.png",
-        "level": 3,
-        "levelName": "贡士",
-        "id": 19
-      },
-      {
-        "score": 5500,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=贡士2.png",
-        "level": 2,
-        "levelName": "贡士",
-        "id": 20
-      },
-      {
-        "score": 6000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=贡士1.png",
-        "level": 1,
-        "levelName": "贡士",
-        "id": 21
-      },
-      {
-        "score": 7000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=进士5.png",
-        "level": 5,
-        "levelName": "进士",
-        "id": 22
-      },
-      {
-        "score": 7500,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=进士4.png",
-        "level": 4,
-        "levelName": "进士",
-        "id": 23
-      },
-      {
-        "score": 8000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=进士3.png",
-        "level": 3,
-        "levelName": "进士",
-        "id": 24
-      },
-      {
-        "score": 9000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=进士2.png",
-        "level": 2,
-        "levelName": "进士",
-        "id": 25
-      },
-      {
-        "score": 10000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=进士1.png",
-        "level": 1,
-        "levelName": "进士",
-        "id": 26
-      },
-      {
-        "score": 20000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=探花3.png",
-        "level": 3,
-        "levelName": "探花",
-        "id": 27
-      },
-      {
-        "score": 30000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=探花2.png",
-        "level": 2,
-        "levelName": "探花",
-        "id": 28
-      },
-      {
-        "score": 40000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=探花1.png",
-        "level": 1,
-        "levelName": "探花",
-        "id": 29
-      },
-      {
-        "score": 50000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=榜眼2.png",
-        "level": 2,
-        "levelName": "榜眼",
-        "id": 30
-      },
-      {
-        "score": 70000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=榜眼1.png",
-        "level": 1,
-        "levelName": "榜眼",
-        "id": 31
-      },
-      {
-        "score": 10000,
-        "logoImgUrl": "http://file.zijiapuzi.com/zsdl/credit/Property1=状元1.png",
-        "level": 1,
-        "levelName": "状元",
-        "id": 32
-      }
-    ],
-    "passPercent": 50,
-    "userLevelRecordList": []
+    "userNickName": "达里尼·执书",
+    "easemobUser": {
+      "password": "f2d136ea22a5b6e0ed0120a03ab795c2",
+      "headImgUrl": "http://file.zijiapuzi.com/zsdl/image/20230103/1672675964476.jpg",
+      "createTime": 1672395747000,
+      "nickname": "达里尼·执书",
+      "updateTime": null,
+      "userId": 645531
+    },
+    "dayTaskScore": 0,
+    "userSex": 1,
+    "wxAccount": null,
+    "belongToPartner": 645531,
+    "wxOpenid": "ooSoi6C4zq2GZrzBqrdkJ61Ir7Ok",
+    "provinceCode": "辽宁",
+    "forbidBonus": 0,
+    "belongToUser": 0,
+    "forbidTest": 0,
+    "userId": 645531,
+    "userInfoScore": 85,
+    "userAuthType": 1,
+    "phone": "15541172233",
+    "wxNickName": "温家平-知书答礼[日赢控股]",
+    "userSign": "♈♉♊♋♌♍♎♏♐♑♒♓\n📑【文以咏志】\n热爱自己的工作，事业心比较强，喜欢跟同行业朋友交流，具有很强的社会责任感，正在努力做一个对钱不感兴趣的人。想认识更多具有社会责任感的小伙伴，一起发光发热。\n\n♈♉♊♋♌♍♎♏♐♑♒♓\n💎【全国招商】\n地级运营中心>城市合伙人>知识创作者>学习者\n\n♈♉♊♋♌♍♎♏♐♑♒♓\n❤️：dl-zsdl2021喜欢就关注我吧👇",
+    "qrCodeUrl": "http://file.zijiapuzi.com/zsdl/qrcode/user/645531.jpg",
+    "provinceName": null,
+    "socialInfo": {
+      "fansLastUpdate": 1672848000000,
+      "likesCount": 145,
+      "likesLastUpdate": 1672848000000,
+      "createTime": 1672395747000,
+      "flowLastUpdate": 1672761600000,
+      "flowCount": 2,
+      "fansCount": 201,
+      "updateTime": 1672900904000,
+      "userId": 645531
+    },
+    "age": 38,
+    "forbidComment": 0,
+    "belongToCity": "210200"
   },
   "status": 200
 }

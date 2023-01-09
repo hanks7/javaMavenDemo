@@ -1,4 +1,4 @@
-package com.hanks.apple;
+package com.hanks.apple.test;
 
 import java.io.Serializable;
 import java.util.List;

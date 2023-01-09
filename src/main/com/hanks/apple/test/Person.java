@@ -1,9 +1,9 @@
-package com.hanks.apple;
+package com.hanks.apple.test;
 
 import com.google.gson.Gson;
 
 /**
- * @ClassName: main.com.hanks.apple.Person
+ * @ClassName: main.com.hanks.apple.test.Person
  * @CreateDate: 2022/5/24 18:18
  * @Author: 侯建军
  * @Description: TODO

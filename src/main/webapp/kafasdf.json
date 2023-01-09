@@ -1,31 +1,77 @@
 {
-  "data": [
-    {
-      "bannerDetailsUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/%E7%8E%A9%E8%B5%9A%E7%9F%A5%E4%B9%A6%E7%AD%94%E7%A4%BC.png",
-      "bannerId": 1,
-      "bannerName": "首页轮播图",
-      "bannerState": 1,
-      "bannerUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/1.png",
-      "createTime": 1663565900000,
-      "operator": ""
-    },
-    {
-      "bannerDetailsUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/%E7%8E%A9%E8%B5%9A%E7%9F%A5%E4%B9%A6%E7%AD%94%E7%A4%BC.png",
-      "bannerId": 2,
-      "bannerName": "首页轮播图",
-      "bannerState": 1,
-      "bannerUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/2.png",
-      "createTime": 1665306814000
-    },
-    {
-      "bannerDetailsUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/%E7%8E%A9%E8%B5%9A%E7%9F%A5%E4%B9%A6%E7%AD%94%E7%A4%BC.png",
-      "bannerId": 3,
-      "bannerName": "首页轮播图",
-      "bannerState": 1,
-      "bannerUrl": "https://zsdl-bucket.oss-cn-hangzhou.aliyuncs.com/zsdl/banner/3.png",
-      "createTime": 1665306832000
-    }
-  ],
   "msg": "",
+  "data": {
+    "birthday": 504633600000,
+    "studentNumber": "6482877",
+    "userAuth": 2,
+    "cityCode": "451000",
+    "bgImgUrl": null,
+    "jobAuth": 0,
+    "authTime": 1672492344000,
+    "userHeadUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DQSEXQCxt36oyRQNKiaeVOTxUzEibqW4K8pEWWj7ZoIAosept73ibor3yrvIULXzibBpWr9BXgQnIqEhNTO8hgqWFg/132",
+    "accountStatus": 1,
+    "cityName": "百色",
+    "belongToCenter": 618522,
+    "identity": {
+      "isCenter": 0,
+      "instructorEndTime": 1673623800000,
+      "creatorType": 0,
+      "vvipNumber": null,
+      "updateTime": null,
+      "userId": 731460,
+      "isClassAdmin": 0,
+      "isPartner": 0,
+      "isInstructor": 1,
+      "createTime": 1672327702000,
+      "isMaster": 0,
+      "userAutoPolling": 1,
+      "isSpecAccount": 0,
+      "userType": 1,
+      "isVvip": 0,
+      "isAutoIdentity": 0
+    },
+    "userNickName": "廷鍾傾",
+    "easemobUser": {
+      "password": "f2d136ea22a5b6e0ed0120a03ab795c2",
+      "headImgUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DQSEXQCxt36oyRQNKiaeVOTxUzEibqW4K8pEWWj7ZoIAosept73ibor3yrvIULXzibBpWr9BXgQnIqEhNTO8hgqWFg/132",
+      "createTime": 1672399246000,
+      "nickname": "廷鍾傾",
+      "updateTime": null,
+      "userId": 731460
+    },
+    "dayTaskScore": 0.19,
+    "userSex": 0,
+    "wxAccount": null,
+    "belongToPartner": 616229,
+    "wxOpenid": null,
+    "provinceCode": "广西",
+    "forbidBonus": 0,
+    "belongToUser": 663849,
+    "forbidTest": 0,
+    "userId": 731460,
+    "userInfoScore": 42,
+    "userAuthType": 1,
+    "phone": "19534813575",
+    "wxNickName": null,
+    "userSign": null,
+    "qrCodeUrl": null,
+    "userAutoPolling": 1,
+    "provinceName": null,
+    "socialInfo": {
+      "fansLastUpdate": 1672934400000,
+      "likesCount": 0,
+      "likesLastUpdate": null,
+      "createTime": 1672399246000,
+      "flowLastUpdate": 1672848000000,
+      "flowCount": 7,
+      "fansCount": 3,
+      "updateTime": 1672991783000,
+      "userId": 731460
+    },
+    "age": 37,
+    "forbidComment": 0,
+    "belongToCity": "451000"
+  },
   "status": 200
 }
+
