@@ -6,12 +6,55 @@ import java.util.HashMap;
 
 
 public class HttpUtil extends BaseHttpUtl {
-    static String base_url = "http://mico.zsdlpro.com";
 
+
+    /**
+     * 请求body：  {"page":1,"rows":10,"userId":634810} 284316
+     *
+     * @param args
+     */
     public static void main(String[] args) {
+// dynamicId: 1166110062145676
+// classId: 1155693021615882
+//        for (int i = 0; i < 30; i++) {
+//            String content = "这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论" + i + "" + i + "" + i + "" + i + "" + i + "" + i + "";
+//            httpPost(
+//                    "http://testzsdl.zijiapuzi.com/social/dynamic/creatDynamicComment",
+//                    "{\n" +
+//                            "    \"dynamicId\": \"1213556700107153\",\n" +
+//                            "    \"classId\": \"1156235529672962\",\n" +
+//                            "    \"commentPeopleId\": \"634810\",\n" +
+//                            "    \"commentedPeopleId\": \"634810\",\n" +
+//                            "    \"commentContent\": \"" + content + "\",\n" +
+//                            "    \"type\": 1 \n" +
+//                            "}"
+//            );
+//        }
 
-        extracted();
+//        httpPost(
+//                "http://testzsdl.zijiapuzi.com/social/dynamic/selectDynamicCommentList",
+//                "{\n" +
+//                        "      \"classId\": 1156235529672962,\n" +
+//                        "      \"dynamicId\": 1213556700107153,\n" +
+//                        "      \"page\": 3,\n" +
+//                        "      \"rows\": 10\n" +
+//                        "    }");
+//        httpPost(
+//                "http://testzsdl.zijiapuzi.com/event/examRoom/roomList",
+//                "{\n" +
+//                        "            \"searchType\": 4,\n" +
+//                        "                \"page\": 1,\n" +
+//                        "                \"rows\": 10,\n" +
+//                        "                \"userId\": 1093534\n" +
+//                        "        }");
+
+        String content = "123456789";
+        System.out.println(content.substring(7,5));
+
     }
+
+
+    static String base_url = "http://mico.zsdlpro.com";
 
     private static void extracted() {
         //        selectLatelyBookList();
@@ -239,7 +282,6 @@ public class HttpUtil extends BaseHttpUtl {
         httpPost(url, "{\"withdrawalType\":" + s + ",\"userId\":634810}");
     }
 
-
     //考试记录
     private static void userAuth() {
         String url = "http://mico.zsdlpro.com/account/user/userAuth";
@@ -270,7 +312,6 @@ public class HttpUtil extends BaseHttpUtl {
         map.put("rows", 10);
         httpPost(url, "{\"chapterId\":978787094983572,\"page\":1,\"rows\":3}");
     }
-
 
     //打赏
     private static void createElectricRecord() {
@@ -606,6 +647,28 @@ public class HttpUtil extends BaseHttpUtl {
         HashMap<String, Object> map = new HashMap<>();
         map.put("userId", 634810);
         httpPost(url, map);
+    }
+
+    /**
+     * 方法描述 隐藏手机号中间位置字符，显示前三后三个字符
+     */
+    public static String hidePhoneNo(String phoneNo) {
+
+        int length = phoneNo.length();
+        int beforeLength = 3;
+        int afterLength = 4;
+        //替换字符串，当前使用“*”
+        String replaceSymbol = "*";
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < length; i++) {
+            if (i < beforeLength || i >= (length - afterLength)) {
+                sb.append(phoneNo.charAt(i));
+            } else {
+                sb.append(replaceSymbol);
+            }
+        }
+
+        return sb.toString();
     }
 
 
